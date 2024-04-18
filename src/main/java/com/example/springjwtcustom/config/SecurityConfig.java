@@ -41,9 +41,9 @@ public class SecurityConfig {
                         .requestMatchers("/welcome", "/auth/register", "/auth/login").permitAll()
                         .requestMatchers("/auth/user/**").authenticated()
                         .requestMatchers("/auth/admin/**").authenticated()
-                        .requestMatchers("/auth/places/**").authenticated()
-                        .requestMatchers("/auth/categories/**").authenticated()
-                        .requestMatchers("/auth/groups/**").authenticated()
+                        .requestMatchers("/places/**").authenticated()
+                        .requestMatchers("/categories/**").authenticated()
+                        .requestMatchers("/groups/**").authenticated()
 
                 )
 

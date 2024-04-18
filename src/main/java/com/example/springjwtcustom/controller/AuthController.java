@@ -34,12 +34,12 @@ public class AuthController {
     public String addNewUser(@RequestBody UserInfo userInfo){
         return service.addUser(userInfo);
     }
-//
-//    @GetMapping("/user/userProfile")
-//    @PreAuthorize("hasAuthority('ROLE_USER')")
-//    public String userProfile(){
-//        return "WElcome to the profile, user";
-//    }
+
+   @GetMapping("/user/userProfile")
+   
+   public String userProfile(){
+       return "WElcome to the profile, user";
+   }
 ////    @GetMapping("/admin/adminProfile")
 ////    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
 //    public String adminProfile(){
